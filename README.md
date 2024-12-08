@@ -1,6 +1,6 @@
-# JurisTech Admin Dashboard
+# Admin Dashboard
 
-This project is a responsive admin dashboard designed for a web application. It showcases summary statistics, a data table, and filter options, tailored for the JurisTech UI/UX developer role assessment.
+This project is a responsive admin dashboard designed for a web application. It showcases summary statistics, a data table, and filter options.
 
 ## Features
 
@@ -28,7 +28,7 @@ This project is a responsive admin dashboard designed for a web application. It 
   
 ### 4. Lightbox for Instructions
 
-- A button that opens a lightbox (modal) displaying detailed information and instructions for using the dashboard.
+- A button that opens a lightbox (modal) displaying detailed information.
 
 ## Technologies Used
 
