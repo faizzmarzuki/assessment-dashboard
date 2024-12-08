@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# JurisTech Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive admin dashboard designed for a web application. It showcases summary statistics, a data table, and filter options, tailored for the JurisTech UI/UX developer role assessment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Header
 
-## Expanding the ESLint configuration
+- A fixed header that remains at the top of the page for easy navigation.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 2. Cards Section
 
-- Configure the top-level `parserOptions` property like this:
+- Displays summary statistics using cards, such as:
+  - Total Users
+  - Total Sales
+  - Total Revenue
+- The cards are arranged in a grid layout:
+  - 3 cards per row on larger screens.
+  - Stacked vertically on smaller screens for better accessibility.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 3. Data Table Section
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- A table displaying a list of users with the following columns:
+  - **ID**
+  - **Name**
+  - **Email**
+  - **Status** (active/inactive)
+  
+### 4. Lightbox for Instructions
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- A button that opens a lightbox (modal) displaying detailed information and instructions for using the dashboard.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Technologies Used
+
+- **React**: For building the user interface.
+- **TypeScript**: For type safety and better development experience.
+- **Vite**: For fast development and build processes.
+- **CSS/SCSS**: For styling the components and ensuring responsiveness.
+
+## Installation
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd juris-tech-admin-dashboard
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000` to view the dashboard.
+
+## Usage
+
+- The dashboard is fully responsive and can be accessed on various devices.
+- Click on the lightbox button to view detailed instructions.
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
