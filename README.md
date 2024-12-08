@@ -45,7 +45,7 @@ To get started with the project, follow these steps:
 
    ```bash
    git clone <repository-url>
-   cd juris-tech-admin-dashboard
+   cd assessment-dashboard
    ```
 
 2. Install the dependencies:
